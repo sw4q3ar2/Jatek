@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package jatek;
 
-/**
- *
- * @author paloci.erno
- */
+import java.util.Random;
+
+
 public class Karakter {
+    private int eletero, ugyesseg, szerencse;
     
+    public Karakter(){
+        
+       Random rand = new Random();
+   
+       this.eletero = rand.nextInt(14,24)+12;
+       this.ugyesseg = rand.nextInt(1,6)+6;
+       this.szerencse = rand.nextInt(1,6)+6;
+        
+    }
 }
