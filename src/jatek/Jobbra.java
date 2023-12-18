@@ -1,15 +1,26 @@
 
 package jatek;
 
-public class Start extends Helyszin{
+public class Jobbra extends Helyszin implements MasikIrany {
+
     @Override
     public String leiras() {
-        return "Ez a start! Menj tobább!";
+        return "Jobbra jöttél";
     }
 
     @Override
     public Helyszin egyikIrany() {
-        return new Kezdes();
+       return new Kelet();
+    }
+
+    @Override
+    public String BtnFelirat() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public String masikBtn() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
@@ -17,11 +28,5 @@ public class Start extends Helyszin{
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    @Override
-    public String BtnFelirat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
     
 }
